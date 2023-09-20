@@ -1,0 +1,14 @@
+{
+  "name": "password-generater",
+  "version": "1.0.0",
+  "description": "generates stong password for user",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch"
+  },
+  "author": "Brian Ndickers",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

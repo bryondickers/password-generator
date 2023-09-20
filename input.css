@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+        --white:0, 0%, 100%;
+        --less-white:0, 0%, 96%;
+        --purple-bg:280, 74%, 12%;
+        --dark-purple:280, 74%, 8%;
+        --white-border:284, 83%, 93%;
+        --gen-text-color:0, 0%, 78%;
+        --bright-purple:284, 70%, 62%;
+        --strong-blue:221, 83%, 53%;
+        --strong-green:149, 71%, 48%;
+        --good-yellow:39, 86%, 54%;
+        --weak-red:360, 76%, 60%;
+    }
+}
+@layer components{
+    .flex-row-box{
+        @apply flex flex-row items-center gap-x-1.5;
+    }
+    .add-btn{
+        @apply p-1.5 border rounded-full border-brightPurple;
+    }
+    .checkbox-style{
+        @apply p-1 text-xs px-2 accent-brightPurple font-bold text-light border-light border rounded-2xl;
+    }
+
+}
