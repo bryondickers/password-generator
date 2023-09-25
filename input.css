@@ -27,5 +27,17 @@
     .checkbox-style{
         @apply p-1 text-xs px-2 accent-brightPurple font-bold text-light border-light border rounded-2xl;
     }
+    .weak-pass{
+        @apply flex-row-box gap-x-1.5 text-base text-weakRed font-medium;
+    }
+    .good-pass{
+        @apply flex-row-box gap-x-1.5 text-base text-goodYellow font-medium;
+    }
+    .strong-pass{
+        @apply flex-row-box gap-x-1.5 text-base text-strongGreen font-medium;
+    }
+    .very-strong-pass{
+        @apply flex-row-box gap-x-1.5 text-base text-strongBlue font-medium;
+    }
 
 }

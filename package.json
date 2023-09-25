@@ -4,7 +4,8 @@
   "description": "generates stong password for user",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./input.css -o ./output.css --watch"
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "build": "tailwindcss -o output.css --minify"
   },
   "author": "Brian Ndickers",
   "license": "ISC",
