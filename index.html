@@ -24,80 +24,92 @@
         >
           Strong password generator
         </h1>
-        <div class="md:w-[70%] lg:w-[60%] md:mx-auto md:mb-12">
-            <p class=" text-light leading-1 font-normal md:text-center">
-                Create strong and secure passwords to keep your accounts and logins
-                safe
-              </p>
+        <div class="md:w-[70%] lg:w-[60%] mb-4 md:mx-auto md:mb-12">
+          <p class="text-light leading-1 font-normal md:text-center">
+            Create strong and secure passwords to keep your accounts and logins
+            safe
+          </p>
         </div>
-        <div class="lg:border lg:pb-6 lg:px-6 md:mx-auto lg:w-[65%] md:w-[75%] lg:border-1 lg:border-light lg:rounded-2xl lg:py-4 ">
-
-          <input id="pass-output" class="md:mx-auto border border-1 text-genTextColor text-xl border-whiteBorder p-2 mt-4 w-full bg-darkPurple rounded-3xl"/>
-        <p id="pass-status" class="md:w-[95%] md:mx-auto">
+        <div
+          class="lg:border lg:pb-6 lg:px-6 md:mx-auto lg:w-[65%] md:w-[75%] lg:border-1 lg:border-light lg:rounded-2xl lg:py-4"
+        >
+          <input
+            id="pass-output"
+            class="md:mx-auto border border-1 text-genTextColor text-xl border-whiteBorder p-2 mt-4 w-full bg-darkPurple rounded-3xl"
+          />
+          <p id="pass-status" class="md:w-[95%] md:mx-auto">
             <img class="countImg" src="" alt="" srcset="" />
           </p>
-        <div class="md:w-[60%] lg:w-[70%] md:mx-auto">
-              <div class="flex-row-box my-4 justify-between">
-                <button id="copy-btn"
-                  class="flex-row-box w-[30%] py-1 gap-x-1 border rounded-2xl border-1 border-whiteBorder justify-center text-base font-bold text-whiteBorder"
-                >
-                  <img src="./images/Copy.svg" alt="" srcset="" />
-                  Copy
-                </button>
-                <button
-                  id="generate-password"
-                  class="flex-row-box py-1.5 rounded-3xl w-[65%] justify-center border border-1 border-brightPurple text-base text-brightPurple font-bold"
-                >
-                  <img src="./images/Arrow Counterclockwise.svg" alt="" srcset="" />
-                  Regenerate
-                </button>
-              </div>
-              <div
-                class="flex-row-box w-full font-strong text-xl text-light justify-between"
+          <div class="md:w-[60%] mt-6 lg:w-[70%] md:mx-auto">
+            <div class="flex-row-box my-4 justify-between">
+              <button
+                id="copy-btn"
+                class="flex-row-box w-[30%] py-1 gap-x-1 border rounded-2xl border-1 border-whiteBorder justify-center text-base font-bold text-whiteBorder"
               >
-                <p>Password length</p>
-                <p id="update-length">4</p>
-              </div>
-              <div class="flex-row-box">
-                <div class="add-btn">
-                  <img src="./images/Subtract.svg" alt="" srcset="" />
-                </div>
-                <input
-                  id="input-characters"
-                  class="accent-brightPurple cursor-pointer w-full my-6"
-                  type="range"
-                  name=""
-                  id=""
-                  min="4"
-                  max="40"
+                <img src="./images/Copy.svg" alt="" srcset="" />
+                Copy
+              </button>
+              <button
+                id="generate-password"
+                class="flex-row-box py-1.5 rounded-3xl w-[65%] justify-center border border-1 border-brightPurple text-base text-brightPurple font-bold"
+              >
+                <img
+                  src="./images/Arrow Counterclockwise.svg"
+                  alt=""
+                  srcset=""
                 />
-                <div class="add-btn">
-                  <img src="./images/Add.svg" alt="" srcset="" />
-                </div>
+                Regenerate
+              </button>
+            </div>
+            <div
+              class="mt-8 flex-row-box w-full font-strong text-xl text-light justify-between"
+            >
+              <p>Password length</p>
+              <p id="update-length">4</p>
+            </div>
+            <div class="flex-row-box">
+              <div class="add-btn">
+                <img src="./images/Subtract.svg" alt="" srcset="" />
               </div>
-      
-              <p class="text-light">Characters used</p>
-              <div id="check-input" class="flex-row-box justify-between mt-4">
-                <div class="checkbox-style flex-row-box gap-x-1">
-                  <input class="cases" type="checkbox" name="" id="upper" />
-                  <label class="" for="upper">ABC</label>
-                </div>
-                <div class="checkbox-style flex-row-box gap-x-1">
-                  <input class="cases" type="checkbox" name="" id="lower" />
-                  <label for="lower">abc</label>
-                </div>
-                <div class="checkbox-style flex-row-box gap-x-1">
-                  <input class="cases" type="checkbox" name="" id="numbers" />
-                  <label for="numbers">123</label>
-                </div>
-                <div class="checkbox-style flex-row-box gap-x-1">
-                  <input class="cases" type="checkbox" name="" id="specialChar" />
-                  <label for="symbols">#$@</label>
-                </div>
+              <input
+                id="input-characters"
+                class="accent-brightPurple cursor-pointer w-full my-6"
+                type="range"
+                name=""
+                id=""
+                min="4"
+                max="40"
+              />
+              <div class="add-btn">
+                <img src="./images/Add.svg" alt="" srcset="" />
               </div>
-        </div>
+            </div>
+
+            <p class="mt-4 text-light">Characters used</p>
+            <div id="check-input" class="flex-row-box justify-between mt-4">
+              <div class="checkbox-style flex-row-box gap-x-1">
+                <input class="cases" type="checkbox" name="" id="upper" />
+                <label class="" for="upper">ABC</label>
+              </div>
+              <div class="checkbox-style flex-row-box gap-x-1">
+                <input class="cases" type="checkbox" name="" id="lower" />
+                <label for="lower">abc</label>
+              </div>
+              <div class="checkbox-style flex-row-box gap-x-1">
+                <input class="cases" type="checkbox" name="" id="numbers" />
+                <label for="numbers">123</label>
+              </div>
+              <div class="checkbox-style flex-row-box gap-x-1">
+                <input class="cases" type="checkbox" name="" id="specialChar" />
+                <label for="symbols">#$@</label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <footer class="text-xs text-center text-white w-full mt-12">
+      &copy; ndickers <span class="year"></span>
+    </footer>
   </body>
 </html>

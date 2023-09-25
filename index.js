@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded",function(e){
+  const d = new Date();
+  const currentYear = d.getFullYear();
+  const getFooter = document.querySelector(".year");
+  getFooter.textContent = currentYear;
+  
+})
+
+
 const charCase = {
   lower: "abcdefghijklmnopqrstuvwxyz",
   upper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
